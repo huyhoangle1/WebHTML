@@ -1,0 +1,74 @@
+/* reset  */
+*{
+    /* Emmet */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+
+}
+#header{
+    height: 46.4px;
+    background-color: aqua;
+}
+#nav li{
+    position: relative;
+}
+#nav > li{
+    display: inline-block;
+}
+#nav , #subnav{
+    list-style-type:none ;
+}
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+#nav li a{
+    color: black;
+    display:block;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 15px 0 15px;
+}
+#nav #subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+/* #nav li:hover a{
+    color: #000;
+    background-color: #ccc;
+} */
+#nav li:hover #subnav{
+    display: block;
+}
+#nav #subnav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    min-width: 150px;
+    
+}
+#nav #subnav a{
+    color: black;
+    height: 100%;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#slider{
+
+}
+#content{
+
+}
+#footer{
+
+}
