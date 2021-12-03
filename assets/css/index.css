@@ -1,74 +1,191 @@
 /* reset  */
-*{
-    /* Emmet */
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box  ;
+* {
+  /* Emmet */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-html{
-    font-family: Arial, Helvetica, sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#main{
-
+#main {
 }
-#header{
-    height: 46.4px;
-    background-color: aqua;
+.text-white{
+    color: #fff !important;
 }
-#nav li{
-    position: relative;
+.clear{
+    clear: both;
 }
-#nav > li{
-    display: inline-block;
+#nav {
+  display: inline-block;
 }
-#nav , #subnav{
-    list-style-type:none ;
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46.4px;
+  background-color: black;
 }
-#nav > li > a{
-    color: white;
-    text-transform: uppercase;
+#nav li {
+  position: relative;
 }
-#nav li a{
-    color: black;
-    display:block;
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0 15px 0 15px;
+#nav > li {
+  display: inline-block;
+}
+#nav,
+#subnav {
+  list-style-type: none;
+}
+#nav > li > a {
+  color: white;
+  text-transform: uppercase;
+}
+#nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 15px 0 15px;
 }
 #nav #subnav li:hover a,
-#nav > li:hover > a{
-    color: #000;
-    background-color: #ccc;
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+    
 }
 /* #nav li:hover a{
     color: #000;
     background-color: #ccc;
 } */
-#nav li:hover #subnav{
-    display: block;
+#nav li:hover #subnav {
+  display: block;
 }
-#nav #subnav{
-    display: none;
-    position: absolute;
+#nav #subnav {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 0 10px black;
+  min-width: 150px;
+  
+}
+#nav #subnav a {
+  color: black;
+  height: 100%;
+  padding: 0 12px;
+  line-height: 38px;
+}
+#header .search-button {
+  color: white;
+  font-size: 20px;
+  float: right;
+  line-height: 46px;
+  padding: 0 21px;
+}
+#header .search-button:hover {
+  background-color: red;
+  padding: 0 21px;
+  cursor: pointer;
+}
+
+#slider {
+  margin-top: 46.4px;
+  padding-top: 50%;
+  /* 50% chiều ngang của chính nó */
+  background: url("/assets/img/woman-3551832.jpg") top center / cover no-repeat;
+}
+#slider > .text-content {
+  position: absolute;
+  top: 80px;
+  right: 20px;
+  color: white;
+}
+#slider .text-heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+}
+#slider .text-description {
+    margin-top: 25px;
+  font-size: 15px;
+}
+#content {
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+}
+#content .section-sub-heading{
+    font-size: 16PX;
+    margin: 20px 0 20px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text{
+    text-align: justify;
+    line-height: 1.6; 
+    /* 1.4 english */
+}
+#content .section-heading,
+#content .section-sub-heading{
+    text-align: center;
+}
+#content .content-section{
+    padding: 64px 0 64px 0;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .members-list{
+    margin-top: 48px;
+    /* margin-bottom: 96px; */
+    /* overflow: hidden; */
+}
+#content .member-name{
+    margin-bottom: 15px;
+    text-align: center;
+}
+#content .member-item{
+    float: left;
+    width: 33.3333%;
+}
+#content .member-item img{
+    height:350px;
+     width:250px;
+     border-radius: 4px;
+     border: 1px black solid
+}
+.tour-section{
+    background-color: black;
+}
+.tickets-list{
     background-color: white;
-    box-shadow: 0 0 10px black;
-    min-width: 150px;
-    
+    margin-top: 40px;
 }
-#nav #subnav a{
-    color: black;
-    height: 100%;
-    padding: 0 12px;
-    line-height: 38px;
+.tickets-list li{
+    font-size: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.sold-out{
+background-color: red;
+color: #fff;
+padding: 3px;
+margin-left: 5px;
+}
+.quantity{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    float: right;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+   text-align: center;
 }
 
-#slider{
-
-}
-#content{
-
-}
-#footer{
-
+#footer {
 }
