@@ -160,7 +160,9 @@ html {
 }
 .tour-section{
     background-color: black;
+    padding-bottom: 20px;
 }
+
 .tickets-list{
     background-color: white;
     margin-top: 40px;
@@ -187,5 +189,139 @@ margin-left: 5px;
    text-align: center;
 }
 
+
 #footer {
+}
+.place-list{
+  margin-top: 32px;
+  margin-left: -9px;
+  margin-right: -9px;
+}
+.place-item{
+    float: left;
+    width: 33.333333%;
+    padding: 0 8px;
+    /* border: 1px solid white;
+    box-sizing: border-box; */
+}
+.place-img{
+  height:300px;
+  width:257px;
+  /* margin-bottom: 15px; */
+}
+.place-body{
+    /* color: white; */
+   padding: 30px;
+    background-color: white;
+
+}
+.place-heading{
+margin-bottom: 17px;
+}
+.place-time{
+opacity: 0.6;
+margin-bottom: 17px;
+}
+.place-desc{
+  margin-bottom:35px;
+}
+.place-buy-btn:hover{
+  background-color: #ccc;
+}
+.place-buy-btn{
+  padding: 9px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal .open{
+  display: flex;
+}
+.ti-bag{
+  margin-right: 15px;
+}
+.modal-header{
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+}
+.modal-color:hover{
+  background-color: white;
+  color: #000;
+  cursor: pointer;
+  opacity: 1;
+}
+.modal-color{
+  position: absolute;
+  right: 0;
+  color: white;
+  padding: 7px;
+  opacity: 0.7;
+}
+.modal-container{
+  /* display: none; */
+  /* display: flex; */
+  position: relative;
+  background-color: #fff;
+  width: 900px;
+  min-height: 200px;
+}
+.modal-body{
+  margin-left: 10%;
+
+}
+.modal-label{
+  display: block;
+  margin: 15px 0px ;
+  font-weight: bold;
+}
+.modal-body input{
+  height: 40px;
+  width: 90%;
+  opacity: 0.6;
+  padding-left: 10px;
+}
+.modal-body button{
+  display: block;
+  margin-top: 16px;
+  padding: 16px;
+  width: 90%;
+  background-color: #009688;
+  color: #fff;
+  border-color:#ccc;
+  font-weight: bold;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.modal-body button:hover{
+  background-color: #ccc;
+  color: black
+}
+.modal-footer{
+  position: relative;
+  padding-top:60px;
+  bottom: 30px;
+  float: right;
+  right: 15px;
+  
+}
+.modal-footer a{
+  text-decoration: none;
 }
