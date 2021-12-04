@@ -9,14 +9,14 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#main {
-}
+
 .text-white{
     color: #fff !important;
 }
 .clear{
     clear: both;
 }
+
 #nav {
   display: inline-block;
 }
@@ -110,8 +110,7 @@ html {
     margin-top: 25px;
   font-size: 15px;
 }
-#content {
-}
+
 #content .section-heading{
     font-size: 30px;
     font-weight: 500;
@@ -191,6 +190,8 @@ margin-left: 5px;
 
 
 #footer {
+  text-align: center;
+  padding: 20px;
 }
 .place-list{
   margin-top: 32px;
@@ -241,13 +242,13 @@ margin-bottom: 17px;
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.4);
   /* display: flex; */
   display: none;
   align-items: center;
   justify-content: center;
 }
-.modal .open{
+.modal.open{
   display: flex;
 }
 .ti-bag{
@@ -282,6 +283,7 @@ margin-bottom: 17px;
   background-color: #fff;
   width: 900px;
   min-height: 200px;
+  animation: modalFaceIn ease .4s;
 }
 .modal-body{
   margin-left: 10%;
@@ -324,4 +326,65 @@ margin-bottom: 17px;
 }
 .modal-footer a{
   text-decoration: none;
+}
+@keyframes modalFaceIn {
+  from{
+    opacity: 0;
+    transform: translateY(-140px);
+  }to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+  margin-top: -20px;
+  transform: translateY(-40px);
+}
+.contact-content{
+  padding: 15px;
+  margin-right: 15%;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: -35px;
+}
+.input{
+  height: 40px;
+  margin-top: 5px;
+  padding:0 20px 0 20px;
+}
+.inputt .input-Mess {
+display: block;
+width: 100%;
+height: 40px;
+margin:10px 0 10px 0 ;
+}
+.inputt button{
+  padding: 15px;
+  background-color: #000;
+  color: white;
+  float: right;
+}
+.inputt button:hover{
+  background-color: #ccc;
+  color: #000;
+}
+.map-section img{
+  width: 100%;
+  height: 100%;
+}
+.socials-list{
+  opacity: 0.9;
+  color: #000;
+
+}
+.class-link{
+  text-align: center;
+  font-weight: bold;
+   font-style: italic;
+   font-size: 20px;
+   color: red;
 }
