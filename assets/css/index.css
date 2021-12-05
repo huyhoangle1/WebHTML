@@ -27,6 +27,7 @@ html {
   right: 0;
   height: 46.4px;
   background-color: black;
+  z-index: 9999;
 }
 #nav li {
   position: relative;
@@ -89,13 +90,13 @@ html {
   cursor: pointer;
 }
 
-#slider {
+.slider {
   margin-top: 46.4px;
   padding-top: 50%;
   /* 50% chiều ngang của chính nó */
-  background: url("/assets/img/woman-3551832.jpg") top center / cover no-repeat;
+  background: url('/assets/img/woman-3551832.jpg') top center / cover no-repeat;
 }
-#slider > .text-content {
+.slider > .text-content {
   position: absolute;
   top: 80px;
   right: 20px;
@@ -106,7 +107,7 @@ html {
   font-weight: 500;
   font-size: 24px;
 }
-#slider .text-description {
+.slider .text-description {
     margin-top: 25px;
   font-size: 15px;
 }
@@ -295,6 +296,7 @@ margin-bottom: 17px;
   font-weight: bold;
 }
 .modal-body input{
+
   height: 40px;
   width: 90%;
   opacity: 0.6;
@@ -356,6 +358,8 @@ margin-bottom: 17px;
   margin-top: 5px;
   padding:0 20px 0 20px;
 }
+
+ 
 .inputt .input-Mess {
 display: block;
 width: 100%;
